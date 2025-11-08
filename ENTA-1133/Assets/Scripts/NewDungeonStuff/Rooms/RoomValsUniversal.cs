@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class RoomValsUniversal : MonoBehaviour
 {
-    [SerializeField] internal GameObject northDoor;
-    [SerializeField] internal GameObject eastDoor;
-    [SerializeField] internal GameObject southDoor;
-    [SerializeField] internal GameObject westDoor;
+    [SerializeField] internal Wall northWall;
+    [SerializeField] internal Wall eastWall;
+    [SerializeField] internal Wall southWall;
+    [SerializeField] internal Wall westWall;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,7 +19,7 @@ public class RoomValsUniversal : MonoBehaviour
     }
     internal bool ReturnAllDoorsClosed()
     {
-        if (northDoor.activeSelf && eastDoor.activeSelf && southDoor.activeSelf && westDoor.activeSelf)
+        if (northWall.doorObject.activeSelf && eastWall.doorObject.activeSelf && southWall.doorObject.activeSelf && westWall.doorObject.activeSelf)
         {
             return true;
         }

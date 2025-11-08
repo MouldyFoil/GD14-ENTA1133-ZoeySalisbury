@@ -48,6 +48,10 @@ MonoBehaviour:
   - {fileID: 935378726532200959, guid: 53f6f8d93fd72e245a12575f85f30ade, type: 3}
   - {fileID: 152088266498065373, guid: c6cdf72098e4ecf4db2f4c02939e2818, type: 3}
   - {fileID: 6328531987127620324, guid: 98018488a06aa2e4fa552686ec6c061a, type: 3}
-  distanceBetweenRooms: 6
+  - {fileID: 8562878053695634095, guid: bced435499ea0384792b84ea0c5fdcca, type: 3}
+  enterRoomPrefab: {fileID: 935378726532200959, guid: 1a23a8afbe8d9bb46bca9a92d373cf94, type: 3}
+  exitRoomPrefab: {fileID: 0}
+  player: {fileID: 0}
+  distanceBetweenRooms: 8.0001
   sizeX: 10
   sizeZ: 10
