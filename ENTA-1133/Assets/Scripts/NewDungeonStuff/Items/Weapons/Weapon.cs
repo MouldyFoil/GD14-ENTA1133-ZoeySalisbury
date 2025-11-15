@@ -9,8 +9,12 @@ using static UnityEngine.UIElements.UxmlAttributeDescription;
 internal abstract class Weapon : Item
 {
     [SerializeField] int damage { get; set; }
-    [SerializeField] int handsRequired { get; }
-    internal abstract void UseEvent();
+    [SerializeField] internal int handsRequired { get; private set; }
+    internal void UseEvent()
+    {
+        //equip weapon n things
+    }
+    internal abstract void Attack();
     internal override string AdditionalItemInfo(string info)
     {
         return " DMG: " + damage;

@@ -8,7 +8,6 @@ using UnityEngine;
 
 internal abstract class Room : MonoBehaviour
 {
-    [SerializeField] internal float itemCapacity = 100;
     [SerializeField] internal abstract string roomDesc { get; }
     //internal List<Item> items = new List<Item>();
     internal bool explored = false;

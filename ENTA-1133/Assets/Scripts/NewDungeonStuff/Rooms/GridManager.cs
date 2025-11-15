@@ -1,4 +1,3 @@
-using DiceGame.Scripts.DungeonThing.Rooms;
 using NUnit.Framework;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -70,6 +69,10 @@ public class GridManager : MonoBehaviour
         else
         {
             rooms.Add(new Vector2Int(x, z), room);
+        }
+        if (room.GetComponent<Room>())
+        {
+            room.GetComponent<Room>().OnRoomCreated();
         }
         return room;
     }
